@@ -1,0 +1,39 @@
+const dzis = new Date();
+const przycisk = document.querySelector('button');
+function data_fun(){
+    let time1 = new Date(document.querySelector("#dates").value).getTime();
+    let time2 = new Date(document.querySelector("#dates2").value).getTime();
+    wynik = Math.round((time2-time1)/1000/60/60/24);
+    if (wynik <0){
+        document.querySelector('.wynik').innerHTML = `od tego dnia mineło ${-wynik} dni`;
+    }else if(wynik == 0){
+        document.querySelector('.wynik').innerHTML = `to ten sam dzień`;
+    }else{
+        document.querySelector('.wynik').innerHTML = `do tego dnia brakuje ${wynik} dni`;
+    }
+};
+przycisk.addEventListener('click',data_fun);
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- script dodac date kawalek daty data z przyszlosci i tolocalstring
+    kalendarz w formularzu-->dziś
+    <input type="date" name="dates" id="dates"> <br> kiedyś
+    <input type="date" name="dates2" id="dates2">
+    <div class="wynik"></div> <br>
+    <button id="update">AAAAAAAAAAAAAAAAA</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
