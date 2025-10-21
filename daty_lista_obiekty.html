@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator dni od egzaminu</h1>
+    </header>
+    <main>
+        <select name="wydarzenia" id="wydarzenia">
+            <option value="a1f3e6c2-9b4d-4d7f-8a1e-1c3f9d2a7e01">Rozpoczęcie roku szkolnego</option>
+            <option value="b2d7a9e3-5c8f-4a2b-9d3f-2e6a1c4b8f02">Dzień Edukacji Narodowej</option>
+            <option value="c3e8b1f4-7d9a-4e3c-8b2f-3f7b2d5c9g03">Dzień wolny od z.d.</option>
+            <option value="a2e8e1f4-ed3a-4d3c-ab3f-d27b2d5c9a61">Narodowe Święto Niepodległości</option>
+            <option value="d4f9c2g5-8e1b-4f4d-9c3g-4g8c3e6d0h04">Zimowa przerwa świąteczna</option>
+            <option value="e5g1d3h6-9f2c-4g5e-0d4h-5h9d4f7e1i05">Nowy Rok</option>
+            <option value="f6h2e4i7-0g3d-5h6f-1e5i-6i0e5g8f2j06">Trzech Króli</option>
+            <option value="v2y8u3z4-6w9t-1x2v-7u1y-2y6u1w4v9z22">Egzamin zawodowy pisemny</option>
+            <option value="i9k5h7l0-3j6g-8k9i-4h8l-9l3h8j1i5m09">Ferie zimowe</option>
+            <option value="k1m7j9n2-5l8i-0m1k-6j0n-1n5j0l3k7o11">Wiosenna przerwa świąteczna</option>
+            <option value="n4p0m2q5-8o1l-3p4n-9m3q-4q8m3o6n0r14">Matura z j. polskiego</option>
+            <option value="o5q1n3r6-9p2m-4q5o-0n4r-5r9n4p7o1s15">Matura z matematyki</option>
+            <option value="p6r2o4s7-0q3n-5r6p-1o5s-6s0o5q8p2t16">Matura z j. obcego</option>
+            <option value="q7s3p5t8-1r4o-6s7q-2p6t-7t1p6r9q3u17">Egzamin zawodowy pisemny</option>
+            <option value="s9u5r7v0-3t6q-8u9s-4r8v-9v3r8t1s5w19">Zakończenie zajęć dydaktycznych</option>
+            <option value="t0v6s8w1-4u7r-9v0t-5s9w-0w4s9u2t6x20">Wakacje letnie</option>
+        </select> <br>
+        <input type="radio" name="typ_daty" class="typ" id="short" value="short"> krotka
+        <input type="radio" name="typ_daty" class="typ" id="long" value="long"> dloga<br>
+        <input type="date" name="data_wlasna" id="data_wlasna">
+        <div class="przyciski">
+            <button id="oblicz">Oblicz</button>
+        </div>
+        <div class="dziwny_wynik"></div>
+    </main>
+    <footer>
+        <p>&copy; Me 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
